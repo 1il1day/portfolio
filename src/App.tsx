@@ -1,17 +1,19 @@
 import './App.css';
-import PcLayout from './components/PcLayout';
-import { useMediaQuery } from 'react-responsive';
-import MobileLayout from './components/MobileLayout';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import TestPage from './pages/TestPage';
 
-function App() {
-  const isPc = useMediaQuery({
-    query : "(min-width:769px)"
-  });
-
+const App = () => {
   return (
-    <>
-      {isPc ? <PcLayout /> : <MobileLayout />}
-    </>
+    <Router>
+      <Routes>
+        {/* Home 페이지 */}
+        <Route path="/" element={<HomePage />} />
+        
+        {/* TestPage 서브 페이지 */}
+        <Route path="/test" element={<TestPage />} />
+      </Routes>
+    </Router>
   );
 }
 
