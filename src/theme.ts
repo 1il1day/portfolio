@@ -1,3 +1,4 @@
 export const theme = {
-  defaultPadding: '25px',
+  mobilePadding: '25px',
+  pcPadding: '60px',
 };
