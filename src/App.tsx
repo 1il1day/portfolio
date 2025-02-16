@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import TestPage from './pages/TestPage';
+import ProjectsPage from './pages/ProjectsPage';
 
 const App = () => {
   return (
@@ -10,8 +11,11 @@ const App = () => {
         {/* Home 페이지 */}
         <Route path="/" element={<HomePage />} />
         
-        {/* TestPage 서브 페이지 */}
-        <Route path="/test" element={<TestPage />} />
+        {/* ProjectsPage 페이지 */}
+        <Route path="/projects" element={<ProjectsPage />} />
+
+        {/* FIXME: TestPage 페이지 */}
+        <Route path="/Test" element={<TestPage />} />
       </Routes>
     </Router>
   );
