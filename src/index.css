@@ -1,6 +1,7 @@
 body {
   margin: 0;
   line-height: 1.4;
+  letter-spacing: -0.6px;
   font-family:"Work Sans", "Noto Sans KR", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
