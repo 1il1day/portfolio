@@ -42,6 +42,7 @@ const AppIconWrap = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 5px;
+  max-width:64px;
   @media (pointer: fine) {
     cursor: pointer;
   }

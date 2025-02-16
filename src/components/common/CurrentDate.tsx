@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components';
 
-export default function CurrentDate() {
+type Props = {
+  type?: 'app' | 'text';
+};
+
+export default function CurrentDate({type = 'text'}:Props) {
   // 현재 날짜 구하기
   const getToday = () => {
     const today = new Date();
@@ -28,10 +32,29 @@ export default function CurrentDate() {
   },[])
 
   return (
-    <CurrentDateWrap>{today.month}월 {today.date}일 {today.day}요일</CurrentDateWrap>
+    <>
+      {type == 'text' &&
+        <CurrentDateWrap>{today.month}월 {today.date}일 {today.day}요일</CurrentDateWrap>
+      }
+      {type == 'app' &&
+        <CurrentDateWrap>
+          <AppTypeDay>{today.day}</AppTypeDay>
+          <AppTypeDate>{today.date}</AppTypeDate>
+        </CurrentDateWrap>
+      }
+    </>
   )
 }
 
 const CurrentDateWrap = styled.div`
   font-size: 28px;
+`;
+const AppTypeDay = styled.span`
+  display: block;
+  margin-bottom: 2px;
+  font-size: 16px;
+  color: #FF0000;
+  `;
+const AppTypeDate = styled.span`
+  font-size: 38px;
 `;
