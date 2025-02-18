@@ -22,8 +22,8 @@ export default function NavBar({toggleMemo, isActive}: Props) {
           imgUrl="/images/app_project.svg" 
         />
         <AppIcon 
-          appTitle="이력서"
-          url="https://www.naver.com/" 
+          appTitle="경력기술서"
+          url="https://charm-ski-3f0.notion.site/197977f397df809cacdcd750f6b7405b?pvs=73" 
           target="_blank" 
           imgUrl="/images/app_notion.svg" 
         />
@@ -44,7 +44,7 @@ const NavBarContainer = styled.nav`
   position: fixed;
   left: 50%;
   bottom: 20px;
-  z-index: 20;
+  z-index: 5;
   transform: translateX(-50%);
   background-color: rgba(29, 29, 29, 0.3);
   border-radius: 40px;

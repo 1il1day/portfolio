@@ -49,7 +49,7 @@ const ProgressBar = styled.div<{ progress: number; size: number; stroke: number;
   }
   .progressbar__svg-circle-full {
     stroke-dasharray: 0;
-    stroke: rgba(63, 63, 63, 0.3);
+    stroke: rgba(255, 255, 255, 0.3);
   }
   .progressbar__svg-circle {
     stroke-dasharray: ${(props) => props.circumference};
@@ -80,5 +80,5 @@ const ProgressText = styled.span`
   margin-top: 5px;
   text-align: center;
   font-size: 20px;
-  color: #222;
+  color: #fff;
 `;

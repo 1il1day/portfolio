@@ -8,7 +8,7 @@ type Props = {
 }
 
 export default function CurrentTime({size = 20, color="#fff", type = 'text'}: Props) {
-  // 현재 시간 구하기
+  // 현재 시각 구하기
   const getCurrentTime = () => {
     const today = new Date();
     const currentHours = today.getHours().toString().padStart(2, "0");

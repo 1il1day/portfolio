@@ -3,30 +3,30 @@ import styled from 'styled-components'
 type Props = {
   imgUrl: string;
   size?: number;
-  className?: string;
   onClick?: () => void;
   disabled?: boolean;
 }
 
-export default function IconImage({imgUrl, size=28, className, onClick, disabled=false}: Props) {
+export default function IconImage({imgUrl, size=28, onClick, disabled=false}: Props) {
   return (
     <Icon
-      className={`${className} ${disabled ? 'disabled' : ''}`}
+      className={`${disabled ? 'disabled' : ''}`}
       imgUrl={imgUrl}
-      size={`${size}px`}
+      size={size}
       onClick={onClick}
     />
   )
 }
 
-const Icon = styled.div<{imgUrl: string, size: string;}>`
-  width: ${(props)=>props.size};
-  height: ${(props)=>props.size};
+const Icon = styled.div<{imgUrl: string, size: number;}>`
+  width: ${(props)=>props.size}px;
+  height: ${(props)=>props.size}px;
   background-image: url(${(props)=>props.imgUrl});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   &.disabled{
     opacity: 0.3;
+    cursor: auto;
   }
 `

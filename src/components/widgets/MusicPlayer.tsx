@@ -11,7 +11,7 @@ const musicList = [
     singer: '음악',
     src: 'audio/01_Did_you_know.mp3'
   }
-]
+];
 
 export default function MusicPlayer({}: Props) {
   const [like, setLike] = useState(false);
@@ -20,7 +20,8 @@ export default function MusicPlayer({}: Props) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(()=>{
-    if(localStorage.getItem('like')){
+    // 좋아요 상태
+    if(localStorage.getItem("like")){
       setLike(true);
     }
 
@@ -52,7 +53,7 @@ export default function MusicPlayer({}: Props) {
   const onClickLikeButton = () => {
     setLike((prev) => !prev);
     if(!like){
-      localStorage.setItem("like","1");
+      localStorage.setItem("like","true");
     }else{
       localStorage.removeItem("like");
     }
@@ -77,12 +78,13 @@ export default function MusicPlayer({}: Props) {
           <MusicTitle>{musicList[0]?.title}</MusicTitle>
           <MusicSinger>{musicList[0]?.singer}</MusicSinger>
           <MusicLikeWrap>
-            <IconImage 
-              className="icon-heart" 
-              imgUrl={`/images/icon/${like ? "icon_heart_on.svg" : "icon_heart_off.svg"}`} 
-              size={25} 
-              onClick={onClickLikeButton}
-            />
+            <div>
+              <IconImage 
+                imgUrl={`/images/icon/${like ? "icon_heart_on.svg" : "icon_heart_off.svg"}`} 
+                size={25} 
+                onClick={onClickLikeButton}
+              />
+            </div>
           </MusicLikeWrap>
         </div>
         <ProgressBarIconWrap>
@@ -92,7 +94,6 @@ export default function MusicPlayer({}: Props) {
           <PlayIconWrap>
             <IconImage imgUrl="/images/icon/icon_prev.svg" size={28} disabled/>
             <IconImage 
-              className="icon-play" 
               imgUrl={`/images/icon/${play ? "icon_pause.svg" : "icon_play.svg"}`} 
               size={28} 
               onClick={onClickPlayButton}
@@ -105,15 +106,13 @@ export default function MusicPlayer({}: Props) {
   )
 }
 
-const MusicPlayerWrap = styled.div`
+const MusicPlayerWrap = styled.article`
+  flex: 1;
   width: 100%;
   height: 180px;
   border-radius: 18px;
   background-color: rgba(255,255,255,0.5);
   color: #fff;
-  @media (min-width: 769px) {
-    max-width: 200px;
-  }
 `;
 const MusicPlayerInner = styled.div`
   display: flex;
@@ -133,8 +132,9 @@ const MusicSinger = styled.em`
 `;
 const MusicLikeWrap = styled.div`
   display: flex;
+  width: 100%;
   justify-content: right;
-  .icon-heart{
+  >div{
     cursor: pointer;
   }
 `;
@@ -158,7 +158,7 @@ const ProgressBar = styled.div`
 const PlayIconWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  .icon-play{
+  >div{
     cursor: pointer;
   }
 `;

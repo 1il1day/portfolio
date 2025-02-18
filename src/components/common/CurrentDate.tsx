@@ -54,7 +54,7 @@ const AppTypeDay = styled.span`
   margin-bottom: 2px;
   font-size: 16px;
   color: #FF0000;
-  `;
+`;
 const AppTypeDate = styled.span`
   font-size: 38px;
 `;
