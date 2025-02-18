@@ -156,7 +156,7 @@ const ContributionWrap = styled.div<{contribution: number;}>`
   overflow: hidden;
   background-color: #999;
   &::after{
-    content: "${(props)=>props.contribution}";
+    content: "${(props)=>props.contribution}%";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -169,7 +169,6 @@ const ContributionWrap = styled.div<{contribution: number;}>`
     border-radius: 50px;
     background-color: #28C840;
     ${(props) => {
-      console.log(props)
       const contributionBar = keyframes`
         0% {
           width: 0%;
