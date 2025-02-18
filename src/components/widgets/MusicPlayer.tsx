@@ -9,7 +9,7 @@ const musicList = [
     num: 1,
     title: 'Did you know',
     singer: '음악',
-    src: 'audio/01_Did_you_know.mp3'
+    src: 'portfolio/audio/01_Did_you_know.mp3'
   }
 ];
 
@@ -80,7 +80,7 @@ export default function MusicPlayer({}: Props) {
           <MusicLikeWrap>
             <div>
               <IconImage 
-                imgUrl={`/images/icon/${like ? "icon_heart_on.svg" : "icon_heart_off.svg"}`} 
+                imgUrl={`portfolio/images/icon/${like ? "icon_heart_on.svg" : "icon_heart_off.svg"}`} 
                 size={25} 
                 onClick={onClickLikeButton}
               />
@@ -92,13 +92,13 @@ export default function MusicPlayer({}: Props) {
             <ProgressBar style={{width: `${progress}%`}}></ProgressBar>
           </ProgressBarWrap>
           <PlayIconWrap>
-            <IconImage imgUrl="/images/icon/icon_prev.svg" size={28} disabled/>
+            <IconImage imgUrl="portfolio/images/icon/icon_prev.svg" size={28} disabled/>
             <IconImage 
-              imgUrl={`/images/icon/${play ? "icon_pause.svg" : "icon_play.svg"}`} 
+              imgUrl={`portfolio/images/icon/${play ? "icon_pause.svg" : "icon_play.svg"}`} 
               size={28} 
               onClick={onClickPlayButton}
             />
-            <IconImage imgUrl="/images/icon/icon_next.svg" size={28} disabled/>
+            <IconImage imgUrl="portfolio/images/icon/icon_next.svg" size={28} disabled/>
           </PlayIconWrap>
         </ProgressBarIconWrap>
       </MusicPlayerInner>

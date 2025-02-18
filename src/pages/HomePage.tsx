@@ -75,11 +75,11 @@ export default function HomePage () {
                 <AppWrap>
                   <TodayAppIcon appTitle="캘린더" type="date"/>
                   <TodayAppIcon appTitle="시계" type="time"/>
-                  <AppIcon appTitle="날씨" imgUrl="/images/app_weather.svg" onClick={onClickWeatherApp}/>
-                  <AppIcon appTitle="음악" imgUrl="/images/app_music.svg" onClick={onClickMusicApp}/>
-                  {/* <AppIcon appTitle="갤러리" imgUrl="/images/app_gallery.svg" /> */}
-                  {/* <AppIcon appTitle="피아노" imgUrl="/images/app_piano.svg"  /> */}
-                  <AppIcon appTitle="설정" imgUrl="/images/app_setting.svg" onClick={onClickSettingApp}/>
+                  <AppIcon appTitle="날씨" imgUrl="portfolio/images/app_weather.svg" onClick={onClickWeatherApp}/>
+                  <AppIcon appTitle="음악" imgUrl="portfolio/images/app_music.svg" onClick={onClickMusicApp}/>
+                  {/* <AppIcon appTitle="갤러리" imgUrl="portfolio/images/app_gallery.svg" /> */}
+                  {/* <AppIcon appTitle="피아노" imgUrl="portfolio/images/app_piano.svg"  /> */}
+                  <AppIcon appTitle="설정" imgUrl="portfolio/images/app_setting.svg" onClick={onClickSettingApp}/>
                 </AppWrap>
               </div>
             </WidgetAppWrap>
@@ -122,7 +122,8 @@ export default function HomePage () {
                     {memoProfileData.map((item,index)=>(
                       <MemoList key={index}>
                         <MemoTitle>{item.title}.</MemoTitle>
-                        <MemoDescription>{item.description}</MemoDescription>
+                        {item.description && <MemoDescription>{item.description}</MemoDescription>}
+                        {item.link && <MemoLink href={item.link} target="_blank">{item.link}</MemoLink>}
                       </MemoList>
                     ))}
                   </MemoListWrap>
@@ -167,13 +168,13 @@ const PageContainer = styled.div`
   display: block;
   min-height: 100vh;
   padding: 0 ${theme.mobilePadding};
-  background-image: url(/images/bg_3x.jpg);
+  background-image: url(portfolio/images/bg_3x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @media (min-width: 769px) {
     padding: 0 ${theme.pcPadding};
-    background-image: url(/images/bg.jpg);
+    background-image: url(portfolio/images/bg.jpg);
   }
 `;
 const AppContainer = styled.div`
@@ -295,6 +296,7 @@ const MemoTitle = styled.em`
   color: #999;
 `;
 const MemoDescription = styled.strong``;
+const MemoLink = styled.a``;
 const AppWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
