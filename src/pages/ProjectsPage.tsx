@@ -8,7 +8,7 @@ import ListItem from "../components/common/ListItem";
 const projectsData = [
   {
     title: "Metanex",
-    period: "2024.08 - 2024.08 (10일)" ,
+    period: "2024.08 - 2024.08 (10일 소요)" ,
     contribution: 100,
     description: "기업을 소개하는 목적으로 제작된 반응형 웹 프로젝트 입니다. 스크롤에 따라 스타일이 변경되는 인터랙션을 개발하였습니다. 약 10일의 개발 기간이 소요되었습니다.",
     badges: ["React", "TypeScript", "Styled-Components"],
@@ -18,7 +18,7 @@ const projectsData = [
   },
   {
     title: "SAMYANG VALVE",
-    period: "2024.07 - 2024.08 (10일)",
+    period: "2024.07 - 2024.08 (10일 소요)",
     contribution: 100,
     description: "기업과 제품을 소개하기 위해 제작된 반응형 웹 프로젝트 입니다. 동일한 스타일의 페이지를 관리하기 위해 컴포넌트를 이용하였고, 기업의 카탈로그를 다운로드 받을 수 있는 버튼이 있습니다. 약 10일의 개발 기간이 소요되었습니다." ,
     badges: ["React", "TypeScript", "Styled-Components"],
@@ -28,7 +28,7 @@ const projectsData = [
   },
   {
     title:"한솔데코",
-    period:"2023.05 - 2023.05 (11일)",
+    period:"2023.05 - 2023.05 (11일 소요)",
     contribution:100,
     description:"기업을 소개할 수 있도록 제작된 반응형 웹 프로젝트입니다. 채용공고 링크를 관리할 수 있도록 관리자 페이지와 연동하였습니다. 약 11일의 개발 기간이 소요되었습니다.",
     badges:["HTML", "SCSS", "JavaScript"],
