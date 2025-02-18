@@ -2,9 +2,7 @@ import styled from 'styled-components'
 import { theme } from '../../theme'
 import { Link } from 'react-router-dom';
 
-type Props = {}
-
-export default function ProjectsTitle({}: Props) {
+export default function ProjectsTitle() {
   return (
     <ProjectsTitleWrap>
       <ButtonWrap>
@@ -37,7 +35,10 @@ const ProjectsTitleWrap = styled.div`
 const ButtonWrap = styled.div`
   display: flex;
   gap: 14px;
-  margin-right: 208px;
+  margin-right: 40px;
+  @media (min-width: 769px) {
+    margin-right: 208px;
+  }
 `;
 const Button = styled.div`
   width: 22px;
