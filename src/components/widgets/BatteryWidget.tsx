@@ -5,10 +5,10 @@ export default function BatteryWidget() {
   return (
     <BatteryWidgetWrap>
       <BatteryInner>
-        <CircleProgressBar progress={100} iconUrl="portfolio/images/icon/icon_html.svg"/>
-        <CircleProgressBar progress={100} iconUrl="portfolio/images/icon/icon_css.svg"/>
-        <CircleProgressBar progress={75} iconUrl="portfolio/images/icon/icon_js.svg"/>
-        <CircleProgressBar progress={25} iconUrl="portfolio/images/icon/icon_react.svg"/>
+        <CircleProgressBar progress={100} iconUrl={`${process.env.PUBLIC_URL}images/icon/icon_html.svg`}/>
+        <CircleProgressBar progress={100} iconUrl={`${process.env.PUBLIC_URL}images/icon/icon_css.svg`}/>
+        <CircleProgressBar progress={75} iconUrl={`${process.env.PUBLIC_URL}images/icon/icon_js.svg`}/>
+        <CircleProgressBar progress={25} iconUrl={`${process.env.PUBLIC_URL}images/icon/icon_react.svg`}/>
       </BatteryInner>
     </BatteryWidgetWrap>
   )

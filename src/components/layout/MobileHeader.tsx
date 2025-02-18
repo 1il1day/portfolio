@@ -12,9 +12,9 @@ export default function MobileHeader({bgColor = 'transparent'}: Props) {
     <MobileHeaderWrap bgColor={bgColor}>
       <CurrentTime />
       <IconWrap>
-        <IconImage imgUrl="portfolio/images/icon/icon_network.svg"/>
-        <IconImage imgUrl="portfolio/images/icon/icon_wifi.svg"/>
-        <IconImage imgUrl="portfolio/images/icon/icon_battery.svg"/>
+        <IconImage imgUrl={`${process.env.PUBLIC_URL}/images/icon/icon_network.svg`}/>
+        <IconImage imgUrl={`${process.env.PUBLIC_URL}/images/icon/icon_wifi.svg`}/>
+        <IconImage imgUrl={`${process.env.PUBLIC_URL}/images/icon/icon_battery.svg`}/>
       </IconWrap>
     </MobileHeaderWrap>
   )

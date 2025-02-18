@@ -14,7 +14,7 @@ const projectsData = [
     badges: ["React", "TypeScript", "Styled-Components"],
     siteUrl:"https://www.metanex.com/",
     projectLink:"https://charm-ski-3f0.notion.site/197977f397df81e8b74dfe35d2150bd4",
-    imgUrl:"portfolio/images/projects/metanex.png"
+    imgUrl:`${process.env.PUBLIC_URL}/images/projects/metanex.png`
   },
   {
     title: "SAMYANG VALVE",
@@ -24,7 +24,7 @@ const projectsData = [
     badges: ["React", "TypeScript", "Styled-Components"],
     siteUrl: "https://en.samyangvalve.com/",
     projectLink: "https://charm-ski-3f0.notion.site/197977f397df81108453c9511ec1be30",
-    imgUrl: "portfolio/images/projects/samyangvalve.png"
+    imgUrl: `${process.env.PUBLIC_URL}/images/projects/samyangvalve.png`
   },
   {
     title:"한솔데코",
@@ -34,7 +34,7 @@ const projectsData = [
     badges:["HTML", "SCSS", "JavaScript"],
     siteUrl:"https://www.hansoldeco.co.kr/",
     projectLink:"https://charm-ski-3f0.notion.site/197977f397df8116b73cd98d8af521d4",
-    imgUrl:"portfolio/images/projects/hansoldeco.png"
+    imgUrl:`${process.env.PUBLIC_URL}/images/projects/hansoldeco.png`
   },
   {
     title: "영화 ‘밀수’ 홍보 페이지",
@@ -43,7 +43,7 @@ const projectsData = [
     description: "영화 ‘밀수’ 홍보를 위한 프로모션 반응형 웹입니다. 페이지별로 카운트 인터랙션, 타이핑 인터랙션, 애니메이션을 퍼블리싱하고 Juicer API를 연동하여 SNS 게시물을 불러오는 게시판을 퍼블리싱 하였습니다.",
     badges: ["HTML", "SCSS", "JavaScript"],
     projectLink: "https://charm-ski-3f0.notion.site/197977f397df811fb243e2b3a847db3f",
-    imgUrl: "portfolio/images/projects/smuggler.png"
+    imgUrl: `${process.env.PUBLIC_URL}/images/projects/smuggler.png`
   },
 ];
 

@@ -14,22 +14,22 @@ export default function NavBar({toggleMemo, isActive}: Props) {
         <AppIcon 
           appTitle="홈"
           url="/" 
-          imgUrl="portfolio/images/app_home.svg" 
+          imgUrl={`${process.env.PUBLIC_URL}/images/app_home.svg`}
         />
         <AppIcon 
           appTitle="프로젝트"
           url="/projects" 
-          imgUrl="portfolio/images/app_project.svg" 
+          imgUrl={`${process.env.PUBLIC_URL}/images/app_project.svg`}
         />
         <AppIcon 
           appTitle="경력기술서"
           url="https://charm-ski-3f0.notion.site/197977f397df809cacdcd750f6b7405b?pvs=73" 
           target="_blank" 
-          imgUrl="portfolio/images/app_notion.svg" 
+          imgUrl={`${process.env.PUBLIC_URL}/images/app_notion.svg`}
         />
         <AppIcon 
           appTitle="프로필"
-          imgUrl="portfolio/images/app_info.svg" 
+          imgUrl={`${process.env.PUBLIC_URL}/images/app_info.svg`}
           onClick={toggleMemo}
           isActive={isActive}
         />

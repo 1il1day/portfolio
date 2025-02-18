@@ -75,11 +75,11 @@ export default function HomePage () {
                 <AppWrap>
                   <TodayAppIcon appTitle="캘린더" type="date"/>
                   <TodayAppIcon appTitle="시계" type="time"/>
-                  <AppIcon appTitle="날씨" imgUrl="portfolio/images/app_weather.svg" onClick={onClickWeatherApp}/>
-                  <AppIcon appTitle="음악" imgUrl="portfolio/images/app_music.svg" onClick={onClickMusicApp}/>
-                  {/* <AppIcon appTitle="갤러리" imgUrl="portfolio/images/app_gallery.svg" /> */}
-                  {/* <AppIcon appTitle="피아노" imgUrl="portfolio/images/app_piano.svg"  /> */}
-                  <AppIcon appTitle="설정" imgUrl="portfolio/images/app_setting.svg" onClick={onClickSettingApp}/>
+                  <AppIcon appTitle="날씨" imgUrl={`${process.env.PUBLIC_URL}/images/app_weather.svg`} onClick={onClickWeatherApp}/>
+                  <AppIcon appTitle="음악" imgUrl={`${process.env.PUBLIC_URL}/images/app_music.svg`} onClick={onClickMusicApp}/>
+                  {/* <AppIcon appTitle="갤러리" imgUrl={`${process.env.PUBLIC_URL}/images/app_gallery.svg`} /> */}
+                  {/* <AppIcon appTitle="피아노" imgUrl={`${process.env.PUBLIC_URL}/images/app_piano.svg`}  /> */}
+                  <AppIcon appTitle="설정" imgUrl={`${process.env.PUBLIC_URL}/images/app_setting.svg`} onClick={onClickSettingApp}/>
                 </AppWrap>
               </div>
             </WidgetAppWrap>
@@ -168,13 +168,13 @@ const PageContainer = styled.div`
   display: block;
   min-height: 100vh;
   padding: 0 ${theme.mobilePadding};
-  background-image: url(portfolio/images/bg_3x.jpg);
+  background-image: url(${process.env.PUBLIC_URL}/images/bg_3x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @media (min-width: 769px) {
     padding: 0 ${theme.pcPadding};
-    background-image: url(portfolio/images/bg.jpg);
+    background-image: url(${process.env.PUBLIC_URL}/images/bg.jpg);
   }
 `;
 const AppContainer = styled.div`
@@ -272,14 +272,14 @@ const MemoList = styled.li`
     width: 26px;
     height: 26px;
     margin: 0;
-    background-image: url(images/icon/checkbox_off.svg);
+    background-image: url(${process.env.PUBLIC_URL}/images/icon/checkbox_off.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     border-radius: 4px;
     cursor: pointer;
     &:checked{
-      background-image: url(images/icon/checkbox_on.svg);
+      background-image: url(${process.env.PUBLIC_URL}/images/icon/checkbox_on.svg);
     }
   }
 `;
