@@ -19,32 +19,38 @@ export default function ProjectsTitle() {
 
 const ProjectsTitleWrap = styled.div`
   position: fixed;
-  top: 54px;
+  top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 5;
   width: calc(100% - (${theme.mobilePadding} * 2));
-  height: 78px;
+  height: 54px;
   padding: 0 ${theme.mobilePadding};
   background-color: #191C1F;
   @media (min-width: 769px) {
     top: 0;
+    height: 78px;
   }
 `;
 const ButtonWrap = styled.div`
   display: flex;
-  gap: 14px;
+  gap: 10px;
   margin-right: 40px;
   @media (min-width: 769px) {
+    gap: 14px;
     margin-right: 208px;
   }
 `;
 const Button = styled.div`
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   cursor: pointer;
+  @media (min-width: 769px) {
+    width: 22px;
+    height: 22px;
+  }
   &.btn-red{
     background-color: #FE5F57;
   }
@@ -59,11 +65,14 @@ const TitleText = styled.h2`
   display: flex;
   justify-content: center;
   gap: 6px;
-  padding: 7px 20px;
+  padding: 4px 20px;
   border-radius: 50px;
   width: 100%;
   max-width: 1000px;
   text-align: center;
-  color: #fff;
   background-color: #0C0F12;
+  color: #fff;
+  @media (min-width: 769px) {
+    padding: 7px 20px;
+  }
 `

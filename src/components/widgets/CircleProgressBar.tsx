@@ -79,6 +79,9 @@ const ProgressText = styled.span`
   display: block;
   margin-top: 5px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
+  @media (min-width: 769px) {
+    font-size: 20px;
+  }
 `;

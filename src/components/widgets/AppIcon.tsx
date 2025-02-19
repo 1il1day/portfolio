@@ -50,11 +50,17 @@ const AppIconWrap = styled.div`
     &:after{
       content: "";
       position: absolute;
-      top: -10px;
-      right: -10px;
-      width: 24px;
-      height: 24px;
+      top: -8px;
+      right: -8px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
+      @media (min-width: 768px) {
+        top: -10px;
+        right: -10px;
+        width: 24px;
+        height: 24px;
+      }
     }
     &.active-red{
       &:after{

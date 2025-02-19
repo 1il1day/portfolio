@@ -90,7 +90,7 @@ const PageContainer = styled.div`
   position: relative;
   display: block;
   background-color: #38393A;
-  padding-top: 132px;
+  padding-top: 96px;
   @media (min-width: 769px) {
     padding-top: 78px;
   }
@@ -104,7 +104,7 @@ const PageInner = styled.div`
 const ListWrap = styled.ul`
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  gap: 50px;
+  gap: 80px 40px;
   @media (min-width: 1201px) {
     grid-template-columns: repeat(2,1fr);
   }
@@ -119,8 +119,6 @@ const InfoWrap = styled.div`
   height: 100%;
   width: 30%;
   overflow-y: hidden;
-  @media (min-width: 769px) {
-  }
 `;
 const ProjectWrap = styled.div`
   position: absolute;

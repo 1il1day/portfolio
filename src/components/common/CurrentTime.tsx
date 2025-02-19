@@ -7,7 +7,7 @@ type Props = {
   type?: 'app' | 'text';
 }
 
-export default function CurrentTime({size = 20, color="#fff", type = 'text'}: Props) {
+export default function CurrentTime({size = 18, color="#fff", type = 'text'}: Props) {
   // 현재 시각 구하기
   const getCurrentTime = () => {
     const today = new Date();

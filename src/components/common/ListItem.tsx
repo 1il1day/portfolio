@@ -123,12 +123,13 @@ const TextWrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
+  gap: 4px;
   height: calc(100% - 260px);
   font-size: 16px;
   color: #fff;
 `;
 const Title = styled.h3`
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
@@ -195,8 +196,10 @@ const LinkButton = styled.a`
   border-radius: 50px;
   color: #fff;
   transition: all .2s;
-  &:hover{
-    background-color: #fff;
-    color: #38393A;
+  @media (hover: hover) {
+    &:hover{
+      background-color: #fff;
+      color: #38393A;
+    }
   }
 `;

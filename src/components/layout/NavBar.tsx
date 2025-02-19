@@ -48,20 +48,26 @@ const NavBarContainer = styled.nav`
   transform: translateX(-50%);
   background-color: rgba(29, 29, 29, 0.3);
   border-radius: 40px;
-  width: calc(100% - (${theme.mobilePadding} * 2));
+  width: calc(100% - (20px * 2));
   max-width: 496px;
   height: 114px;
   @media (min-width: 769px) {
     bottom: 30px;
+    width: calc(100% - (${theme.mobilePadding} * 2));
   }
 `;
 const NavBarInner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 12px;
   width: 100%;
-  max-width: 391px;
+  max-width: 290px;
   margin: auto;
-  padding: 0 35px;
+  padding: 0 12px;
+  @media (min-width: 421px) {
+    gap: 24px;
+    padding: 0 35px;
+    max-width: 391px;
+  }
 `;

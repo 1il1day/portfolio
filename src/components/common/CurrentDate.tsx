@@ -47,7 +47,10 @@ export default function CurrentDate({type = 'text'}:Props) {
 }
 
 const CurrentDateWrap = styled.div`
-  font-size: 28px;
+  font-size: 22px;
+  @media (min-width: 769px) {
+    font-size: 28px;
+  }
 `;
 const AppTypeDay = styled.span`
   display: block;

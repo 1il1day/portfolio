@@ -28,7 +28,7 @@ const MobileHeaderWrap = styled.div<{bgColor: string;}>`
   align-items: center;
   z-index: 5;
   width: calc(100% - (${theme.mobilePadding} * 2));
-  height: 54px;
+  height: 44px;
   padding: 0 ${theme.mobilePadding};
   background-color: ${(props)=>props.bgColor};
 `;

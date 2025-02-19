@@ -7,7 +7,7 @@ type Props = {
   disabled?: boolean;
 }
 
-export default function IconImage({imgUrl, size=28, onClick, disabled=false}: Props) {
+export default function IconImage({imgUrl, size=24, onClick, disabled=false}: Props) {
   return (
     <Icon
       className={`${disabled ? 'disabled' : ''}`}
