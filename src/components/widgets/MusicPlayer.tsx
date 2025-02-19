@@ -9,7 +9,7 @@ const musicList = [
     num: 1,
     title: 'Did you know',
     singer: '음악',
-    src: 'portfolio/audio/01_Did_you_know.mp3'
+    src: `${process.env.PUBLIC_URL}/audio/01_Did_you_know.mp3`
   }
 ];
 
