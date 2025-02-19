@@ -4,15 +4,20 @@ import Badge from './Badge';
 type Props = {
   title: string;
   period: string;
-  description: string;
+  description: React.ReactNode;
   contribution?: number;
   badges: string[];
   siteUrl?: string;
   projectLink?: string;
+  githubLink?: string;
   imgUrl?: string;
 }
 
 const badgeData = [
+  {
+    text: "개인작업",
+    bgColor: "#A8ADC0",
+  },
   {
     text: "HTML",
     bgColor: "#E0640C",
@@ -47,6 +52,7 @@ export default function ListItem({
   badges, 
   projectLink='', 
   siteUrl='', 
+  githubLink='',
   imgUrl=''
 }: Props) {
   return (
@@ -84,6 +90,9 @@ export default function ListItem({
           }
           {projectLink &&
             <LinkButton href={projectLink} target="_blank">프로젝트 기술서</LinkButton>
+          }
+          {githubLink &&
+            <LinkButton href={githubLink} target="_blank">Github 바로가기</LinkButton>
           }
         </ButtonWrap>
       </TextWrap>

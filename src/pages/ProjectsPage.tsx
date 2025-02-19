@@ -7,10 +7,19 @@ import ListItem from "../components/common/ListItem";
 
 const projectsData = [
   {
+    title: "포트폴리오 웹",
+    period: "2025.02 - 2024.02 (7일 소요)" ,
+    contribution: 100,
+    description: <>- IOS 환경의 UI를 컨셉으로 제작한 포트폴리오 반응형 웹입니다. <br />- 위젯 단위로 컴포넌트를 제작했습니다.</>,
+    badges: ["개인작업", "React", "TypeScript", "Styled-Components"],
+    githubLink: 'https://github.com/1il1day/portfolio',
+    imgUrl:`${process.env.PUBLIC_URL}/images/projects/portfolio.png`
+  },
+  {
     title: "Metanex",
     period: "2024.08 - 2024.08 (10일 소요)" ,
     contribution: 100,
-    description: "기업을 소개하는 목적으로 제작된 반응형 웹 프로젝트 입니다. 스크롤에 따라 스타일이 변경되는 인터랙션을 개발하였습니다. 약 10일의 개발 기간이 소요되었습니다.",
+    description: <>- 기업을 소개하는 목적으로 제작된 반응형 웹 프로젝트 입니다. <br />- 스크롤에 따라 스타일이 변경되는 인터랙션을 개발하였습니다.</>,
     badges: ["React", "TypeScript", "Styled-Components"],
     siteUrl:"https://www.metanex.com/",
     projectLink:"https://charm-ski-3f0.notion.site/197977f397df81e8b74dfe35d2150bd4",
@@ -20,7 +29,7 @@ const projectsData = [
     title: "SAMYANG VALVE",
     period: "2024.07 - 2024.08 (10일 소요)",
     contribution: 100,
-    description: "기업과 제품을 소개하기 위해 제작된 반응형 웹 프로젝트 입니다. 동일한 스타일의 페이지를 관리하기 위해 컴포넌트를 이용하였고, 기업의 카탈로그를 다운로드 받을 수 있는 버튼이 있습니다. 약 10일의 개발 기간이 소요되었습니다." ,
+    description: <>- 기업과 제품을 소개하기 위해 제작된 반응형 웹 프로젝트 입니다. <br />- 동일한 스타일의 페이지를 관리하기 위해 컴포넌트를 이용하였고, 기업의 카탈로그를 다운로드 받을 수 있는 버튼이 있습니다.</>,
     badges: ["React", "TypeScript", "Styled-Components"],
     siteUrl: "https://en.samyangvalve.com/",
     projectLink: "https://charm-ski-3f0.notion.site/197977f397df81108453c9511ec1be30",
@@ -30,7 +39,7 @@ const projectsData = [
     title:"한솔데코",
     period:"2023.05 - 2023.05 (11일 소요)",
     contribution:100,
-    description:"기업을 소개할 수 있도록 제작된 반응형 웹 프로젝트입니다. 채용공고 링크를 관리할 수 있도록 관리자 페이지와 연동하였습니다. 약 11일의 개발 기간이 소요되었습니다.",
+    description:<>- 기업을 소개할 수 있도록 제작된 반응형 웹 프로젝트입니다. <br />- 채용공고 링크를 관리할 수 있도록 관리자 페이지와 연동하였습니다.</>,
     badges:["HTML", "SCSS", "JavaScript"],
     siteUrl:"https://www.hansoldeco.co.kr/",
     projectLink:"https://charm-ski-3f0.notion.site/197977f397df8116b73cd98d8af521d4",
@@ -40,7 +49,7 @@ const projectsData = [
     title: "영화 ‘밀수’ 홍보 페이지",
     period: "2023.05 - 2023.07",
     contribution: 80,
-    description: "영화 ‘밀수’ 홍보를 위한 프로모션 반응형 웹입니다. 페이지별로 카운트 인터랙션, 타이핑 인터랙션, 애니메이션을 퍼블리싱하고 Juicer API를 연동하여 SNS 게시물을 불러오는 게시판을 퍼블리싱 하였습니다.",
+    description: <>- 영화 ‘밀수’ 홍보를 위한 프로모션 반응형 웹입니다. <br />- 페이지별로 카운트 인터랙션, 타이핑 인터랙션, 애니메이션을 퍼블리싱 하였습니다.<br />- Juicer API를 연동하여 SNS 게시물을 불러오는 게시판을 퍼블리싱 하였습니다.</>,
     badges: ["HTML", "SCSS", "JavaScript"],
     projectLink: "https://charm-ski-3f0.notion.site/197977f397df811fb243e2b3a847db3f",
     imgUrl: `${process.env.PUBLIC_URL}/images/projects/smuggler.png`
@@ -73,6 +82,7 @@ export default function ProjectsPage () {
                   badges={item.badges} 
                   siteUrl={item.siteUrl}
                   projectLink={item.projectLink}
+                  githubLink={item.githubLink}
                   imgUrl={item.imgUrl}
                 />
               ))}
