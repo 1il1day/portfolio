@@ -62,7 +62,7 @@ const NavBarInner = styled.div`
   justify-content: space-between;
   gap: 12px;
   width: 100%;
-  max-width: 290px;
+  max-width: 300px;
   margin: auto;
   padding: 0 12px;
   @media (min-width: 421px) {

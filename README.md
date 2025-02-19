@@ -4,8 +4,7 @@
 - 배포: github-pages
 
 ### 주요 컴포넌트
-📁 components
-  📁 widgets
+📁 components/widgets
    - DateTimeWidget: 현재 시각 / 현재 날짜 표시
    - WeatherWidget: 사용자의 위치 정보와 OpenWeatherMap API를 활용한 날씨 정보 출력 (브라우저 위치 정보 권한 필요)
    - MusicPlayer: 음악 재생 및 좋아요 여부 저장
