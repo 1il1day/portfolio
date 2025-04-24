@@ -123,6 +123,8 @@ export default function HomePage () {
                       <MemoList key={index}>
                         <MemoTitle>{item.title}.</MemoTitle>
                         {item.description && <MemoDescription>{item.description}</MemoDescription>}
+                        {item.phone && <MemoLink href={`tel:${item.phone}`}>{item.phone}</MemoLink>}
+                        {item.email && <MemoLink href={`mailto:${item.email}`}>{item.email}</MemoLink>}
                         {item.link && <MemoLink href={item.link} target="_blank">{item.link}</MemoLink>}
                       </MemoList>
                     ))}
