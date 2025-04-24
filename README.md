@@ -1,5 +1,5 @@
-### 소개
-- IOS 환경의 UI를 컨셉으로 제작한 포트폴리오 반응형 웹입니다. 위젯 단위로 컴포넌트를 제작했습니다.
+### 개요
+- IOS 환경의 UI를 컨셉으로 제작한 포트폴리오 반응형 웹입니다.
 - 기술 스택: React, TypeScript, Styled-components
 - 배포: github-pages
 
