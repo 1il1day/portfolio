@@ -30,7 +30,7 @@ const ProjectsTitleWrap = styled.div`
   background-color: #191C1F;
   @media (min-width: 769px) {
     top: 0;
-    height: 78px;
+    height: 60px;
   }
 `;
 const ButtonWrap = styled.div`

@@ -16,6 +16,15 @@ const projectsData = [
     imgUrl:`${process.env.PUBLIC_URL}/images/projects/portfolio.png`
   },
   {
+    title: "대한조선 (리뉴얼)",
+    period: "2024.11 - 2024.12 (7일 소요)" ,
+    contribution: 100,
+    description: <>- 메인 페이지, 서브탑, 게시판, 서브페이지&#40;회사소개, 지속가능경영, 사업분야, 홍보센터&#41; 퍼블리싱 외주 작업을 진행했습니다.</>,
+    badges:["HTML", "SCSS", "JavaScript"],
+    siteUrl:"https://www.daehanship.com/",
+    imgUrl:`${process.env.PUBLIC_URL}/images/projects/daehanship.png`
+  },
+  {
     title: "Metanex",
     period: "2024.08 - 2024.08 (10일 소요)" ,
     contribution: 100,
@@ -102,13 +111,13 @@ const PageContainer = styled.div`
   background-color: #38393A;
   padding-top: 96px;
   @media (min-width: 769px) {
-    padding-top: 78px;
+    padding-top: 60px;
   }
 `;
 const PageInner = styled.div`
   position: relative;
   z-index: 1;
-  height: calc(100vh - 78px);
+  height: calc(100vh - 60px);
   font-size: 50px;
 `;
 const ListWrap = styled.ul`
@@ -143,6 +152,6 @@ const ProjectInner = styled.div`
   max-width: 1150px;
   padding: 40px 25px 180px;
   @media (min-width: 769px) {
-    padding: 80px 60px 200px;
+    padding: 64px 60px 200px;
   }
 `
